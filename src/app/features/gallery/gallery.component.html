@@ -1,0 +1,161 @@
+<div class="galleryCont">
+  <div class="pageHeader">
+    <div class="container">
+      
+      <div class="dFlex">
+        
+        <h2>Gallery</h2>
+        <div class="searchCont">
+          <input type="text" placeholder="Search" name="search"  [(ngModel)]="searchText"   style="background-image:url('./assets/images/search.png'); background-size:22px 22px; background-repeat:no-repeat;"/>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <div class="portGridCont"  infinite-scroll
+    [infiniteScrollDistance]="modalScrollDistance"
+    [infiniteScrollThrottle]="modalScrollThrottle"
+    [scrollWindow]="true"
+    (scrolled)="onModalScrollDown()">
+      <div class="portGrid modal-body" *ngFor="let hero of heroes | filter:searchText">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src={{hero.imgSrc}} alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portGrid">
+        <div class="gBox">
+          <div class="gImgCont">
+            <img class="thumbnail" src="./assets/images/static/port1.jpg" alt="portfolio"/>
+          </div>
+          <div class="portDet">
+            <h5>Mobile app design</h5>
+            <p>The definition of a prod is an</p>
+          </div>
+        </div>
+      </div>
+
+       -->
+
+    </div>
+  </div>
+</div>
