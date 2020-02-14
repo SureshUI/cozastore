@@ -15,7 +15,7 @@
     .dFlex{
       display:flex;
       align-items: center;
-      h2{ width:300px; text-align:center; flex:1 1; text-align:left;}
+      h2{ width:300px; text-align:center; flex:1 1; text-align:left;padding-right: 20px}
       .searchCont{
         input{
           width:200px;
@@ -66,11 +66,17 @@
             font-size:16px;
             font-weight: 600;
             margin:0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           p{
             font-size:14px;
             color:#666666;
             margin-top:5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
          
         }
